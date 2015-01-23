@@ -11,6 +11,11 @@ $(document).on('ready', function() {
   		
   		$(this).hide(1000);
   		$('.newinput').width(position);
+  		// making all elements editable
+
+  		$(this).addClass('editable');
+  		$(this).attr('contentEditable', 'true');
+
 
   		
   		
@@ -34,6 +39,15 @@ $(document).on('ready', function() {
 
   		
 	});
+
+  //$(document).on('ready', function() {
+
+
+  //	$(this).addClass('editable');
+  // $(this).attr('contenteditable', 'true');
+  //	console.log("got here editable");
+
+ // });
 
   
 });
